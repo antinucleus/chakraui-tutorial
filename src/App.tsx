@@ -1,25 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
+import { Container, Flex, VStack } from '@chakra-ui/react';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxW="container.xl" p={0}>
+      <Flex h="100vh" py={20}>
+        <VStack w="full" h="full" p={10} spacing={10} alignItems="flex-start" />
+        <VStack w="full" h="full" p={10} spacing={10} alignItems="flex-start" bg="gray.50" />
+      </Flex>
+    </Container>
   );
 }
 
